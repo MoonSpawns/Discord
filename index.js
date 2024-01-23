@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'America/Denver', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -23,28 +23,28 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1137237814547861596')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
-    .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+    .setURL('https://twitch.tv/developer') //Must be a youtube video link 
+    .setState('𝐈 𝐝𝐨𝐧’𝐭 𝐤𝐧𝐨𝐰 𝐲𝐨𝐮.')
+    .setName('Moonilius')
+    .setDetails(`𝖮𝗁, 𝗍𝗁𝖾 𝗍𝗂𝗆𝖾? 𝖨𝗍'𝗌 [${formatTime()}]`)
+  
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/804261323914346536/1196983830943383693/Tumblr_l_1083612698496518.gif?ex=65b99d10&is=65a72810&hm=d8332006af691fec8eb4c96553f2ce6b57d1b059ef869cee08a378ef259ca209&') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('𝐂𝐨𝐧𝐬𝐢𝐝𝐞𝐫 𝐭𝐡𝐚𝐭 𝐚 𝐠𝐨𝐨𝐝 𝐭𝐡𝐢𝐧𝐠.') //Text when you hover the Large image
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/804261323914346536/1196983831274737754/Tumblr_l_1083609293705998.gif?ex=65b99d10&is=65a72810&hm=409a6086f917fe6a8f7b1cc1aeed1681b9cdb134d75910b391dc7823b8d19577&') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('Tsuki') //Text when you hover the Small image
+    .addButton('🜼', 'https://open.spotify.com/track/59MY06cY0nvWUApyWcTYGB?si=eUzdB43MTRuPDHJ5YsaFKw')
+
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
-
+  
   let prevTime = null;
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = ` [${newTime}]`;
+      const newDetails = `»»-—　㌐　—-««`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
