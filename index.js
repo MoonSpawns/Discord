@@ -30,7 +30,7 @@ client.on('ready', async () => {
     .setName('Moonilius')
     .setDetails(`𝖮𝗁, 𝗍𝗁𝖾 𝗍𝗂𝗆𝖾? 𝖨𝗍'𝗌 [${formatTime()}]`)
   
- .setAssetsLargeImage('https://media.discordapp.net/attachments/1087950091303788565/1221904374733734039/Tumblr_l_1083612698496518-1.gif?ex=66144620&is=6601d120&hm=3ac4569e2a0faa02c9b8806247ed0bd087fa8b613133d56b0f03551837bd0ff1&') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/804261323914346536/1224215035484573788/IMG_4711.gif?ex=661cae19&is=660a3919&hm=a6596f8ed7c968450843b8ffb4b0ed88f56a7a36f0be0a5395b9b90c03b51505&') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('') //Text when you hover the Large image
     .setAssetsSmallImage('https://media.discordapp.net/attachments/804261323914346536/1196983831274737754/Tumblr_l_1083609293705998.gif?ex=65b99d10&is=65a72810&hm=409a6086f917fe6a8f7b1cc1aeed1681b9cdb134d75910b391dc7823b8d19577&') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Tsuki') //Text when you hover the Small image
